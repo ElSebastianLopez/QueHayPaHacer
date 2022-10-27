@@ -1,17 +1,19 @@
 <template>
   <div>
-    <CardComponent/>
+    <CardTwo/>
     <p>jlhasldkfhlkaehflkasfk</p>
+    
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import CardLugares from "@/components/CardLugares.vue";
+import CardTwo from "../components/CardTwo.vue";
 
 export default {
   components: {
-    CardLugares,
-  },
+    CardTwo,
+},
 };
 </script>
