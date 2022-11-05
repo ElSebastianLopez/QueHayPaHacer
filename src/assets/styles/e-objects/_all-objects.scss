@@ -1,3 +1,10 @@
 /*
-grit, flex, todo lo que modifique el layaud 
+grid, flex, todo lo que modifique el layaud 
 */
+.principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(40px, auto);
+    gap: 0.1rem;
+    justify-items: center;
+  }

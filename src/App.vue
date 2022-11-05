@@ -40,4 +40,5 @@ nav {
     }
   }
 }
+@import './assets/styles/main.scss';
 </style>

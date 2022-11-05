@@ -1,8 +1,7 @@
 <template>
   <div class="container">
     <footer
-      class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
-    >
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col mb-3">
         <a
           href="/"
@@ -15,16 +14,15 @@
         <p class="text-muted">&copy; 2022</p>
       </div>
 
-      <div class="col mb-3"></div>
+      <div class="col mb-3">
+        <p>Este es un lugar en el cual puedes encontrar otra forma de ver el mundo</p>
+      </div>
 
       <div class="col mb-3">
         <h5>intereses</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
             <a href="#" class="nav-link p-0 text-muted">Sitios de interes</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-muted">productos</a>
           </li>
         </ul>
       </div>
@@ -35,9 +33,6 @@
           <li class="nav-item mb-2">
             <a href="#" class="nav-link p-0 text-muted">Nosotros</a>
           </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-muted">Contacto</a>
-          </li>
         </ul>
       </div>
 
@@ -46,9 +41,6 @@
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
             <a href="#" class="nav-link p-0 text-muted">Equipo</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-muted">Inicio</a>
           </li>
         </ul>
       </div>

@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <nav class="navbar navbar-expand-lg bg-light">
+  <div class="pr35">
+    <nav class="navbar navbar-expand-lg bg-cyan">
   <div class="container-fluid">
     <img src='../assets/logo.png' width="50" height="50">
     <a class="navbar-brand" href="/">Que Hay Pa' Hacer</a>
@@ -15,15 +15,8 @@
         <li class="nav-item">
           <a class="nav-link" href="/Interes">Lugares de Intereses</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Ver Más
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/Nosotros">Quienes Somos</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/Aliados">Aliados</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="/Nosotros">Quienes Somos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/Contactenos">Contactos</a>
@@ -42,6 +35,7 @@
 <script>
 export default {
   name: 'HelloWorld',
+
   props: {
     msg: String
   }
