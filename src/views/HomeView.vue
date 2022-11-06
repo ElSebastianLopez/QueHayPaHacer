@@ -46,16 +46,6 @@ export default {
          return true;
          
          })
-
-
-         //  let x=res.data.map(item=>item.length>=6)
-         //  this.resultadoPubli=x;
-         //  console.log('xxx',this.resultadoPubli)
-         //  let solo6=[] 
-         //  solo6=this.resultadoPubli;
-         //  let x=solo6.map(l=>{l.length>=6}) 
-         //  this.resultadoPubli=x;  
-         //this.resultadoPubli=res.data;
        })
 
      },
