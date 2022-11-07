@@ -1,25 +1,21 @@
 <template>
   <div class="principal">
-    <CardTwo v-for="lugares in resultadoPubli" v-bind:key="lugares"  
+    <CardTwo class="card" v-for="lugares in resultadoPubli" v-bind:key="lugares"  
        :tituloPrueba="lugares.nombreLugar"
        :descripcion="lugares.descripcionLugar"
-       :urlImagen="lugares.urlImagen"/>
-  
-    <ModalCard />
-
+       :urlImagen="lugares.urlImagen"
+       :fechaPubli="lugares.fechaPublicacion"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import CardTwo from "../components/CardTwo.vue";
-import ModalCard from "../components/ModalCard.vue";
 import axios from "axios";
 
 export default {
   components: {
     CardTwo,
-    ModalCard,
   },
   data(){
     return{

@@ -132,8 +132,6 @@ export default {
       },
       resultadoApiEdit:{},
       
-
-
     }
   },
   //METODOS DE LA API
