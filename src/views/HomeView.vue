@@ -4,7 +4,7 @@
       <CarruselCom />
     </div>
     <div class="card1">
-      <card-component v-for="lugares in resultadoPubli" v-bind:key="lugares.idLugar"  
+      <card-component v-for="lugares in resultadoPubli" v-bind:key="lugares"  
        :tituloPrueba="lugares.nombreLugar"
        :descripcion="lugares.descripcionLugar"
        :urlImagen="lugares.urlImagen"
@@ -28,17 +28,27 @@ export default {
   data(){
     return{
       resultado:[],
-      resultadoPubli:{},
+      resultadoPubli:[],
     }
    },
    methods: {
-    consultarApiPublicacion(){
-      axios.get("https://localhost:7157/api/PublicacionLugares").then((res)=>{
-         console.log("publicaciones",res.data);
-         this.resultadoPubli=res.data;
-      })
+     consultarApiPublicacion() {
+       axios.get("https://localhost:7157/api/PublicacionLugares").then((res) => {
+         console.log("publicaciones", res.data);
+         var contador = 0;
+         res.data.map(item => {
+          if (contador <= 5) {
+            contador++;
+             console.log('conut',contador)
+           return this.resultadoPubli.push(item);
 
-    },
+         }
+         return true;
+         
+         })
+       })
+
+     },
   },
   mounted(){
     this.consultarApiPublicacion();
