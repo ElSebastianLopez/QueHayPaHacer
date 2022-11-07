@@ -1,7 +1,7 @@
 <template>
   <div
     class="card"
-    style="width: 20rem; height: 380px; margin-top: 20px; border-radius: 20px"
+    style="width: 20rem; height: 400px; margin-top: 20px; border-radius: 20px"
   >
     <img
       :src="urlImagen"
@@ -114,8 +114,9 @@ export default {
   overflow: hidden;
   cursor: pointer;
 }
-.des:hover {
+.des:active {
   display: block;
+  
 }
 .pr {
   max-width: 82px;

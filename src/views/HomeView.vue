@@ -3,8 +3,8 @@
     <div>
       <CarruselCom />
     </div>
-    <div style="width: 100%;margin:auto;margin-left: 30px;">
-      <div class="card1">
+    <div class="" style="width: 100%;margin:auto;margin-left: 30px;">
+      <div class="card1 primari">
         <card-component v-for="lugares in resultadoPubli" v-bind:key="lugares" :tituloPrueba="lugares.nombreLugar"
           :descripcion="lugares.descripcionLugar" :urlImagen="lugares.urlImagen" />
     
@@ -65,6 +65,9 @@ export default {
 .pr35{
   margin: auto;
 }
-
+.primari{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
 @import "../assets/styles/main.scss";
 </style>
