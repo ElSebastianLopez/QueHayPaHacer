@@ -1,12 +1,11 @@
 <template>
   <div class="card12">
     <div class="card" style="width: 90%">
-      <img src="../assets/imagenes/chiva3.png" class="card-img-top" alt="..." />
+      <img :src="urlImagen" class="card-img-top" alt="hola" style="width:500px;height:350px;margin:auto;margin-top: 1%;"/>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">{{tituloPrueba}}</h5>
         <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {{descripcion}}
         </p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
@@ -14,7 +13,17 @@
   </div>
 </template>
 
-<script></script>
+<script>
+  export default {
+  
+    name: 'CardComponent',
+    props: {
+      tituloPrueba:String,
+      descripcion:String,
+      urlImagen:Image,
+    },
+  }
+  </script>
 
 <style>
 
