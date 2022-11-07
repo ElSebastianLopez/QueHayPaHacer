@@ -1,19 +1,19 @@
 <template>
   <div class="pr35">
-    <nav class="navbar navbar-expand-lg bg-cyan">
+    <nav class="navbar navbar-expand-lg bg-cyan hh" >
   <div class="container-fluid">
-    <img src='../assets/logo.png' width="50" height="50">
-    <a class="navbar-brand" href="/">Que Hay Pa' Hacer</a>
+    <img src='../assets/imagenes/Logo3.png' width="80" height="80">
+    <a class="navbar-brand" href="/" style="font-size: 30px;margin-left: 1%;">Que Hay Pa' Hacer</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Interes">Lugares de Intereses</a>
+          <a class="nav-link" href="/Interes">Publicaciones</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/Nosotros">Quienes Somos</a>
@@ -21,11 +21,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/Contactenos">Contactos</a>
         </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Lo que quieras conocer" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+      </ul>    
     </div>
   </div>
 </nav>
@@ -44,5 +40,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.pr35{
+  font-size: 30px;
+}
+.hh{
+  height:100px;
+}
+.menu{
+  margin-left: 29%;  
+}
+li{
+  padding-left: 20px;
+}
+li:hover{
 
+  border-bottom: 2px solid rgb(181, 228, 228);
+
+}
 </style>

@@ -47,7 +47,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Publicacion</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -62,7 +62,7 @@
           </div>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Descripcion:</label>
-            <input type="text" class="form-control"  v-model="resultadoApiEdit.descripcionLugar" placeholder="Editar Descripcion">
+            <textarea type="text" class="form-control"  v-model="resultadoApiEdit.descripcionLugar" placeholder="Editar Descripcion"></textarea>
           </div>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Url:</label>
@@ -151,9 +151,22 @@ export default {
     },
     //Metodo para eliminar 
     EliminarApi(id) {
-      this.eliminar.idPublicacionLugares = id;
-      
-
+      Swal.fire({
+  title: '¿Esta usted seguro?',
+  text: "No podra revertir estos cambios !",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Si,quiero eliminarlo!'
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      'Eliminado!',
+      'Su registro ha sido eliminado.',
+      'success'
+    )
+    this.eliminar.idPublicacionLugares = id;
       axios.post("https://localhost:7157/api/PublicacionLugares/DeletePublicacionLugares", this.eliminar).then((res) => {
         if (res.data.result == "Borrado correctamente") {
           this.mensaje('Borrado correctamente');
@@ -166,6 +179,9 @@ export default {
         .catch((e) => {
           console.log(e)
         })
+  }
+})
+      
 
     },
 

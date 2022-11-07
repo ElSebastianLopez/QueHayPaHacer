@@ -3,13 +3,12 @@
     <div>
       <CarruselCom />
     </div>
-    <div class="card1">
-      <card-component v-for="lugares in resultadoPubli" v-bind:key="lugares"  
-       :tituloPrueba="lugares.nombreLugar"
-       :descripcion="lugares.descripcionLugar"
-       :urlImagen="lugares.urlImagen"
-       />
+    <div style="width: 100%;margin:auto;margin-left: 30px;">
+      <div class="card1">
+        <card-component v-for="lugares in resultadoPubli" v-bind:key="lugares" :tituloPrueba="lugares.nombreLugar"
+          :descripcion="lugares.descripcionLugar" :urlImagen="lugares.urlImagen" />
     
+      </div>
     </div>
   </div>
 </template>
@@ -59,13 +58,12 @@ export default {
 
 <style lang="scss" scoped>
 .card1 {
-  width: 100%;
-  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(70px, auto);
-  gap: 1rem;
-  justify-items: center;
+	grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+	grid-template-rows: [y0] 1fr [y1] 1fr [y2] ;
+}
+.pr35{
+  margin: auto;
 }
 
 @import "../assets/styles/main.scss";

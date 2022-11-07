@@ -1,15 +1,15 @@
 <template>
     <div class="carrusel12">
-      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div id="carouselExampleControlsNoTouching" class="carousel slide b" data-bs-touch="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="../assets/imagenes/chiva3.png" class="d-block w-100" alt="...">
+            <img src="../assets/imagenes/chiva3.png" class="d-block w-100 b" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="../assets/imagenes/bosque3.png" class="d-block w-100" alt="...">
+            <img src="../assets/imagenes/bosque3.png" class="d-block w-100 b" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="../assets/imagenes/nochePensilvania3.png" class="d-block w-100" alt="...">
+            <img src="../assets/imagenes/nochePensilvania3.png" class="d-block w-100 b" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
@@ -33,6 +33,10 @@
   .carrusel12{
     width: 90%;
     margin: auto;
+    
+  }
+  .b{
+    border-radius: 20px;
   }
 
 </style>
