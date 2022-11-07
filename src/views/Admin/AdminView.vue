@@ -234,9 +234,12 @@ td{
 
 }
 td:active{
-  max-width: 500px;
+  text-align: left;
+  max-width: 300px;
   white-space: initial;
   overflow: auto;
   text-overflow: initial;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 </style>
