@@ -7,9 +7,9 @@
 					<h2 class="heading-section">FORMULARIO CONTÁCTENOS</h2>
 				</div>
 			</div>
-			<div class="row no-gutters">
-				<div class="col-md-7">
-					<div class="contact-wrap w-100 p-md-5 p-4">
+			<div class="row no-gutters " >
+				<div class="col-md-7" >
+					<div class="contact-wrap w-100 p-md-5 p-4" >
 						<h3 class="mb-4">Contáctenos</h3>
 						<div id="form-message-warning" class="mb-4"></div>
 						<div id="form-message-success" class="mb-4">
@@ -54,13 +54,15 @@
 							</div>
 						</form>
 					</div>
-				</div>
-				<div class="col-md-5 d-flex align-items-stretch">
-					<div class="info-wrap w-100 p-5 img" style="background-image: url(../assets/adicionales/images/pensilvania.jpg);">
 					</div>
+				<div class="col-md-5 d-flex align-items-stretch">
+					<!--<div class="info-wrap w-100 p-5 img" style="background-image: url(../assets/adicionales/images/pensilvania.jpg);">
+					-->
+					<img style="width:500px;height: 575px;" src="https://thumbs.dreamstime.com/b/imagen-vertical-del-r%C3%ADo-reservado-que-atraviesa-el-bosque-127487747.jpg">
+				</div>
 				</div>
 			</div>
-		</div>
+		
     
 	</section>
 </template>
