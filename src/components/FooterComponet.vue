@@ -1,49 +1,19 @@
 <template>
-  <div class="container">
-    <footer
-      class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 link-dark text-decoration-none"
-        >
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap" />
-          </svg>
-        </a>
-        <p class="text-muted">&copy; 2022</p>
-      </div>
 
-      <div class="col mb-3">
-        <p>Este es un lugar en el cual puedes encontrar otra forma de ver el mundo</p>
-      </div>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2022 MARKPN, EN PENSILVANIA-CALDAS</p>
 
-      <div class="col mb-3">
-        <h5>intereses</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-muted">Sitios de interes</a>
-          </li>
-        </ul>
-      </div>
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+    </a>
 
-      <div class="col mb-3">
-        <h5>Compañia</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-muted">Nosotros</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col mb-3">
-        <h5>Otros</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-muted">Equipo</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Inicio</a></li>
+      <li class="nav-item"><a href="/Interes" class="nav-link px-2 text-muted">Cosas de Interes</a></li>
+      <li class="nav-item"><a href="/Nosotros" class="nav-link px-2 text-muted">Equipo</a></li>
+      <li class="nav-item"><a href="/Contactos" class="nav-link px-2 text-muted">Habla Con Mosotros </a></li>
+    </ul>
+  </footer>
+</div>
 </template>

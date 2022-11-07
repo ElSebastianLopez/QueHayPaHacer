@@ -8,22 +8,22 @@
       <div>
 
       </div>
-      <table class="table stripped bordered">
+      <table class="table stripped bordered table table-striped table-hover">
         <thead>
           <tr>
-            <th>IDLugar</th>
-            <th>Direccion</th>
+            <!--<th>IDLugar</th>-->
             <th>Nombre</th>
+            <th>Direccion</th>
             <th>Descripcion</th>
             <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="result in resultadoApiTabla" v-bind:key="result.idPublicacionLugares">
-            <td>{{ result.idPublicacionLugares }}</td>
-            <td>{{ result.direccionLugar }}</td>
+          <tr class="tabla" v-for="result in resultadoApiTabla" v-bind:key="result.idPublicacionLugares">
+            <!--<td>{{ result.idPublicacionLugares }}</td>-->
             <td>{{ result.nombreLugar }}</td>
-            <td>{{ result.descripcionLugar }}</td>
+            <td>{{ result.direccionLugar }}</td>
+            <td class="ta">{{ result.descripcionLugar }}</td>
             <td>
               <a @click="consultarApiPublicacionXId(result.idPublicacionLugares)"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="cursor:pointer"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -68,10 +68,7 @@
             <label for="recipient-name" class="col-form-label">Url:</label>
             <input type="text" class="form-control"  v-model="resultadoApiEdit.urlImagen" placeholder="Editar Descripcion">
           </div>
-         
-          
-         
-         
+
         </form>
       </div>
       <div class="modal-footer">
@@ -222,5 +219,27 @@ export default {
 </script>
 
 <style>
+.container{
+  text-align: left;
+}
+td{
+  text-align: left;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  margin-left: 25px;
+  margin-right: 25px;
 
+}
+td:active{
+  text-align: left;
+  max-width: 300px;
+  white-space: initial;
+  overflow: auto;
+  text-overflow: initial;
+  margin-left: 25px;
+  margin-right: 25px;
+}
 </style>

@@ -69,7 +69,6 @@
 
 <script>
 import emailjs from '@emailjs/browser';
-
 export default {
 	data() {
     return {
@@ -93,7 +92,6 @@ export default {
     },
   },
 };
-
 </script>
 
 <style>
