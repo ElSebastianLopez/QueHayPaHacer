@@ -43,9 +43,7 @@ export default {
 .pr35{
   font-size: 30px;
 }
-.hh{
-  height:100px;
-}
+
 .menu{
   margin-left: 29%;  
 }
