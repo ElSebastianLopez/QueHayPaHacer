@@ -6,7 +6,7 @@
         <img src="../assets/imagenes/chiva3.png" width="300" height="200" />
       </div>
       <div class="col-sm-8 text-start">
-        <h1 class="display-4">¿Por qué nuestro proyecto?</h1>
+        <h1 class="display-6">¿Por qué nuestro proyecto?</h1>
         <p class="lead">
           Aquí encontrarás un lugar en donde enterarte de las mejores noticias
           del municipio, y de los lugares ideales para pasar un rato agradable o
@@ -22,7 +22,7 @@
     <div class="jumbotron row">
       <hr class="my-4" />
       <div class="col-sm-8 text-start">
-        <h1 class="display-4">Misión y Visión</h1>
+        <h1 class="display-6">Misión y Visión</h1>
         <p class="lead">
           Buscamos mejorar la relación de los comercios y personas del municipio
           y alrededores, así encontrarás algo novedoso para realizar.
