@@ -2,9 +2,12 @@
 grid, flex, todo lo que modifique el layaud 
 */
 .principal {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(40px, auto);
-    gap: 0.1rem;
-    justify-items: center;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(40px, auto);
+  gap: 0.1rem;
+  justify-items: center;
+}
+.card{
+  
+}
