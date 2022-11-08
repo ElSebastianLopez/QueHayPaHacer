@@ -2,11 +2,11 @@
     <div class="row g-3 ancho">
         <div class="col-md-6">
             <label for="prueba" class="form-label">Nombre Lugar</label>
-            <input v-model="nombreLugarf" class="form-control" type="text" required>
+            <input v-model="nombreLugarf" class="form-control" id="nombre" type="text" required>
         </div>
         <div class="col-md-6">
             <label for="" class="form-label">Direccion Lugar</label>
-            <input v-model="direccionLugarf" type="text" class="form-control" required>
+            <input v-model="direccionLugarf" type="text" id="Direccion" class="form-control" required>
         </div>
         <div class="col-md-6">
             <label for="" class="form-label">Descripcion Lugar</label>
@@ -18,7 +18,7 @@
         </div>
         <div class="col-md-6">
             <label for="" class="form-label">Url Imagen</label>
-            <input v-model="urlImagenf" type="url" class="form-control"  required>
+            <input v-model="urlImagenf" type="url" id="imagen" class="form-control"  required>
         </div>
         <div class="col-md-6">
             <label for="" class="form-label">Descripcion Publicacion</label>
@@ -49,36 +49,58 @@ export default {
 
     },
     
-    methods:{
-        CrearApiPublicacion(){
-            var crearPublicacion=
-            {
-                direccionLugar: this.direccionLugarf,
-                nombreLugar: this.nombreLugarf,
-                descripcionLugar: this.descripcionLugarf,
-                fechaPublicacion: "2022-10-27T05:25:34.010Z",
-                urlImagen: this.urlImagenf,
-                descripcionPublicacion: this.descripcionPublicacionf
+    methods: {
+        CrearApiPublicacion() {
+
+
+            const nombrePublicacion = document.getElementById('nombre');
+            const direccion = document.getElementById('Direccion');
+            const imagen = document.getElementById('imagen');
+            if (nombrePublicacion.value === "") {
+                alert("Por favor, escribe El nombre de la publicacion.");
+                nombrePublicacion.focus();
+                return false;
             }
-            
-      axios.post("https://localhost:7157/api/PublicacionLugares",crearPublicacion).then((res)=>{
-          //crearPublicacion(res.data)
-          if(res.data.result== "Registro Creado Correctamente "){
-            this.mensaje('Registro Creado Correctamente');
-          }
-          else{
-            this.mensaje('No se a podido crear el registro  ');
-          }
-      })
-      .catch((e)=>{
-        console.log(e)
-      })
+            if (direccion.value === "") {
+                alert("Por favor, escribe la direccion del lugar");
+                direccion.focus();
+                return false;
+            }
+            if (imagen.value === "") {
+                alert("Por favor, Ingresa la url de la imagen de la publicacion");
+                imagen.focus();
+                return false;
+            }
+            else {
+                var crearPublicacion =
+                {
+                    direccionLugar: this.direccionLugarf,
+                    nombreLugar: this.nombreLugarf,
+                    descripcionLugar: this.descripcionLugarf,
+                    fechaPublicacion: "2022-10-27T05:25:34.010Z",
+                    urlImagen: this.urlImagenf,
+                    descripcionPublicacion: this.descripcionPublicacionf
+                }
 
-    },
+                axios.post("https://localhost:7157/api/PublicacionLugares", crearPublicacion).then((res) => {
+                    //crearPublicacion(res.data)
+                    if (res.data.result == "Registro Creado Correctamente ") {
+                        this.mensaje('Registro Creado Correctamente');
+                    }
+                    else {
+                        this.mensaje('No se a podido crear el registro  ');
+                    }
+                })
+                    .catch((e) => {
+                        console.log(e)
+                    })
+            }
 
-    mensaje(mensaje){
-      Swal.fire(mensaje)
-    }, 
+        },
+
+        mensaje(mensaje) {
+            Swal.fire(mensaje)
+        },
     }
 
     

@@ -1,11 +1,13 @@
 <template>
   <div class="principal">
-    <CardTwo class="card" v-for="lugares in resultadoPubli" v-bind:key="lugares"  
+    <CardTwo class="card" v-for="lugares in resultadoPubli" v-bind:key="lugares" 
+       :idLugar="lugares.idPublicacionLugares" 
        :tituloPrueba="lugares.nombreLugar"
        :descripcion="lugares.descripcionLugar"
        :urlImagen="lugares.urlImagen"
        :fechaPubli="lugares.fechaPublicacion"/>
   </div>
+ 
 </template>
 
 <script>
@@ -31,10 +33,11 @@ export default {
        })
 
      },
+
   },
   mounted(){
     this.consultarApiPublicacion();
-    
+
     }
 };
 </script>

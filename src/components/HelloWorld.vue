@@ -13,13 +13,13 @@
           <a class="nav-link active" aria-current="page" href="/">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Interes">Publicaciones</a>
+          <a class="nav-link active" href="/Interes">Publicaciones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Nosotros">Quienes Somos</a>
+          <a class="nav-link active"  href="/Nosotros">Quienes Somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Contactenos">Contactos</a>
+          <a class="nav-link active" href="/Contactenos">Contactos</a>
         </li>
       </ul>    
     </div>
